@@ -1,0 +1,86 @@
+
+https://docs.djangoproject.com/en/1.8/intro/tutorial01/
+https://djangobook.com/mdj2-models/
+https://docs.djangoproject.com/en/2.2/topics/db/queries/
+
+
+cd C:\Users\student1
+
+django-admin startproject shoppingcart
+
+
+--- check server ---
+python manage.py runserver
+
+
+--- [4] ---
+define New Project in Pycharm; from files already inside folder
+
+--- [5] ---
+-> creez aplicatiile cu numele shop / cart (apare folder cu numele main):
+python manage.py startapp shop
+python manage.py startapp cart
+
+--- [6] ---
+-> adaug aplicatiile shop si cart la INSTALLED_APPs din fisier: 
+shoppingcart/settings.py 
+
+--- [7] ---
+Django admin, ne asiguram ca in shoppingcart\settings.py "django.contrib.admin" module este enable 
+(nu este comentat)
+Apoi poate fi accessat in web utilizand http://localhost:8000/admin/ ; dupa ce am pornit server-u
+
+--- [8] ---
+configurez runserver: 
+- run manage.py 
+- edit configurations -> la Parameters adaug comanda 'runserver'
+
+--- [9] ---
+-> fac migratiile ca sa am acces la server
+python manage.py migrate
+-> testez server-ul: http://localhost:8000/admin/ ; dupa ce am pornit server-ul
+
+
+--- [10] ---
+-> dupa ce am verificat ca server-ul functioneaza, creez cont admin:
+   python manage.py createsuperuser
+
+username=razvan 
+email=razvan1.gavriliu@gmail.com
+password:
+
+--- [11] ---
+create models
+
+--- [12] ---
+resister admin
+
+--- [13] --
+python manage.py makemigrations
+python manage.py migrate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
