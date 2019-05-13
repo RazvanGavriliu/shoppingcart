@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<tr>
+<td width="300px" style="border: 0px">
+{% for categ in categories %}
+    <a href="#">{{categ.name}} <br/></a>
+{% endfor %}
+</td>
+
+
+<td>
+{% for product in products %}
+    <a href="http://localhost:8000/shop/products/{{product.id}}/">{{product.name}}</a>
+{% endfor %}
+</td>
+
+</tr>
+
+
+</body>
+</html>
